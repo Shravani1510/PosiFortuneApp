@@ -1,0 +1,42 @@
+.message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.message-content {
+  margin-bottom: 20px;  /* Space between message content and button */
+}
+
+.greeting {
+  font-size: 2em;  /* Larger font size for the greeting */
+  margin-bottom: 10px;  /* Space between greeting and random message */
+}
+
+.random-message {
+  font-size: 1.5em;  /* Adjust font size for the random message */
+  margin-bottom: 20px;  /* Ensure space between message and button */
+}
+
+.back-button {
+  display: block;  /* Ensure the button is treated as a block element */
+  width: 200px;    /* Optional: Set a width for the button */
+  margin: 0 auto;  /* Center the button horizontally */
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;  /* Add space between the message and the button */
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #45a049;
+}

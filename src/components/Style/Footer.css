@@ -1,0 +1,58 @@
+/* Style/Footer.css */
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
+  }
+  
+  .footer p {
+    align-items: center;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-links li {
+    margin: 0 15px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* For smaller screens (mobile) */
+  @media (max-width: 480px) {
+    .footer-links {
+      flex-direction: column;
+    }
+  
+    .footer-links li {
+      margin: 5px 0;
+    }
+  }
+  
