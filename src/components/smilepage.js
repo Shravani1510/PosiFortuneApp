@@ -10,7 +10,7 @@ function smilepage() {
             <h1>Smile Page</h1><br/>
             {/* <p>This is the Smile page!</p><br/> */}
             <p>
-            A smile can lift the mood of others, making the world around you a happier place.<br/>
+            A smile can lift the mood of you and others, making the world around you a happier place.<br/>
             <br/>Smiling reduces stress by releasing endorphins.<br/>
             <br/>It boosts your immune system and helps you live longer.
             </p><br/>
