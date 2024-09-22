@@ -18,10 +18,10 @@ function Form() {
     const fullMessage = `Hello ${name}!\n${randomMessage}`;
     
     // Send data to the backend 
-    //  deployed backend URL 
-     const backendUrl = 'https://posi-fortune-server-5nzili6oa-shravani-parisekas-projects.vercel.app/api/saveUser'; // Update this
-      try{
-      const response = await fetch(backendUrl, {
+    //https://web-production-a6ef5.up.railway.app/
+
+    try {
+      const response = await fetch('https://web-production-a6ef5.up.railway.app/api/saveUser', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
