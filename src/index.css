@@ -149,10 +149,7 @@ img {
 }
 
 @media (max-width: 768px) {
-  video {
-    display: none;
-  }
-
+  
   .greeting, .random-message, .form-container h1, .form-container label, .smile-container  {
     color: rgb(203, 119, 10); /* Set a default text color */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds a dark shadow to text */
