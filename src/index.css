@@ -20,7 +20,19 @@ video{
   top: 0;
   left: 0;
   z-index: -1; /* Ensures the video stays in the background */
- 
+  pointer-events: none;
+}
+
+video::-webkit-media-controls {
+  display: none !important; /* Hide controls in WebKit browsers */
+}
+
+video::-webkit-media-controls-enclosure {
+  display: none !important; /* Hide any controls enclosure in WebKit browsers */
+}
+
+video::-webkit-media-controls-play-button {
+  display: none !important; /* Hide play button in WebKit browsers */
 }
 
  .content{

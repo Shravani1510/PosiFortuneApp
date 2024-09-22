@@ -29,7 +29,7 @@ const Main = () => {
   return (
     <div className='main'>
        {/* Conditionally render the video background */}
-       {showVideo && <video src={randomVideo} autoPlay loop muted />}
+       {showVideo && <video src={randomVideo} autoPlay loop muted playsinline/>}
         {/* <video src={randomVideo} autoPlay loop muted /> */}
         <div className='content'>
         <Routes>
