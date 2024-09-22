@@ -46,6 +46,7 @@ video::-webkit-media-controls-play-button {
   align-items: center;
   color: rgb(203, 119, 10);
   padding: 20px; /* Some padding for smaller screens */
+  z-index: 1;
 }
 
 .form-container {
@@ -144,6 +145,18 @@ img {
 
   label {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  video {
+    display: none;
+  }
+
+  .main {
+    background-image: url('/public/smile.jpg'); /* Static image for mobile */
+    background-size: cover;
+    background-position: center;
   }
 }
 
