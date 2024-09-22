@@ -16,35 +16,37 @@ function Form() {
     // Select a random message
     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
     const fullMessage = `Hello ${name}!\n${randomMessage}`;
-    
+    // Navigate to the MessagePage and pass the message as state
+    navigate('/message', { state: { message: fullMessage } });
+
     // Send data to the backend 
     //https://web-production-a6ef5.up.railway.app/
 
-    try {
-      const response = await fetch('https://web-production-a6ef5.up.railway.app/api/saveUser', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: name,
-          luckyNumber: luckyNumber,
-          message: randomMessage,
-        }),
-      });
+    // try {
+    //   const response = await fetch('https://web-production-a6ef5.up.railway.app/api/saveUser', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({
+    //       name: name,
+    //       luckyNumber: luckyNumber,
+    //       message: randomMessage,
+    //     }),
+    //   });
 
-      const data = await response.json();
-      if (data.success) {
-        console.log('User saved successfully!');
-      } else {
-        console.error('Failed to save user');
-      }
+    //   const data = await response.json();
+    //   if (data.success) {
+    //     console.log('User saved successfully!');
+    //   } else {
+    //     console.error('Failed to save user');
+    //   }
 
-      // Navigate to the MessagePage and pass the message as state
-      navigate('/message', { state: { message: fullMessage } });
-    } catch (error) {
-      console.error('Error:', error);
-    }
+    //   // Navigate to the MessagePage and pass the message as state
+    //   navigate('/message', { state: { message: fullMessage } });
+    // } catch (error) {
+    //   console.error('Error:', error);
+    // }
   };
 
   return (
