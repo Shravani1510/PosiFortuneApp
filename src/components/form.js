@@ -16,11 +16,11 @@ function Form() {
     // Select a random message
     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
     const fullMessage = `Hello ${name}!\n${randomMessage}`;
+    
     // Send data to the backend 
-    //  deployed backend URL
-    const backendUrl = 'https://posi-fortune-server.vercel.app/api/saveUser'; 
-
-    try {
+    //  deployed backend URL 
+     const backendUrl = 'https://posi-fortune-server-5nzili6oa-shravani-parisekas-projects.vercel.app/api/saveUser'; // Update this
+      try{
       const response = await fetch(backendUrl, {
         method: 'POST',
         headers: {
